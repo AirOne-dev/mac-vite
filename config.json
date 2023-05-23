@@ -1,0 +1,11 @@
+{
+    "user": {
+        "firstname": "Erwan",
+        "lastname": "Martin"
+    },
+    "dock": {
+        "icons": [
+            "finder", "launchpad", "safari", "mails", "calendar", "contacts", "notes", "settings", "trash"
+        ]
+    }
+}
