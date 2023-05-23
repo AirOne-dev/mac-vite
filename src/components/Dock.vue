@@ -10,13 +10,14 @@
             :key="`${index}-${icon}`" 
             class="dock-icon" 
             :style="{ '--scale': scales[index], '--margin': margins[index] + 'px', '--transition': transitions[index] }"
-            :icon="icon" 
+            :icon="icon as Icons"
         />
     </div>
 </template>
 
 <script setup lang="ts">
     import { dock } from '$/config.json';
+    import { Icons } from '@/enums';
     import Icon from './Icon.vue';
     import { reactive } from 'vue';
 
@@ -33,7 +34,8 @@
     }
     
     const handleMouseMove = (event: MouseEvent) => {
-        const rect = event.currentTarget.getBoundingClientRect();
+        if (event.currentTarget === null) return;
+        const rect = (event.currentTarget as HTMLElement).getBoundingClientRect();
         const x = event.clientX - rect.left;
         
         scales.forEach((_, index) => {
