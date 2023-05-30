@@ -71,7 +71,7 @@
         justify-content: center;
         align-items: center;
         width: fit-content;
-        padding: 0 10px;
+        padding: 0 5px;
         height: 60px;
         background-color: rgba(255, 255, 255, 0.1);
         border: solid 1px rgba(255, 255, 255, 0.2);

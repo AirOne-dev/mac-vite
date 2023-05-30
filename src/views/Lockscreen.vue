@@ -56,7 +56,16 @@
             padding: 10px;
             font-size: 14px;
             border-radius: 170px;
-            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: solid 1px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+
+            &::placeholder {
+                color: #fff;
+            }
+            &:focus {
+                outline: none;
+            }
         }
 
         .center {

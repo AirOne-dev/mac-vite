@@ -37,5 +37,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+
+        &:active {
+            filter: brightness(0.6);
+        }
     }
 </style>
