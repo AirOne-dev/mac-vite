@@ -7,7 +7,7 @@
     "dev": "vite --port 1212",
     "build": "vue-tsc && vite build --base '/mac-vite/'",
     "preview": "vite preview",
-    "publish": "npm run build && echo \"[Live demo](https://airone-dev.github.io/mac-vite/)\" > dist/README.md && cd dist && git init && git branch -m build && git add -A && git commit -m 'build' && git push https://github.com/AirOne-dev/mac-vite.git build:build --force"
+    "publish": "rm -rf dist && npm run build && echo \"[Live demo](https://airone-dev.github.io/mac-vite/)\" > dist/README.md && cd dist && git init && git branch -m build && git add -A && git commit -m 'build' && git push https://github.com/AirOne-dev/mac-vite.git build:build --force"
   },
   "dependencies": {
     "vite-plugin-static-copy": "^0.16.0",
