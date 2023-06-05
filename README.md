@@ -5,13 +5,13 @@
 ## Project Setup
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 ### Compile and Minify for Production
@@ -23,11 +23,11 @@ npm run build
 ### Compile & publish to github branch (use for github.io page)
 
 ```sh
-npm run publish
+pnpm run publish
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+pnpm run lint
 ```

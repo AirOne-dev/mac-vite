@@ -25,7 +25,7 @@ import { onMounted } from 'vue';
 
 html {
   background-color: #3c13a4;
-  background-image: url('@/assets/wallpaper.svg');
+  background-image: url('@/assets/img/wallpaper.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
