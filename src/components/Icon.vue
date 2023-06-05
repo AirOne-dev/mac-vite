@@ -15,7 +15,7 @@
 
     onMounted(async () => {
         try {
-            const iconModule = await import(`@/assets/icons/${props.icon}.svg`);
+            const iconModule = await import(`../assets/icons/${props.icon}.svg`);
             iconUrl.value = iconModule.default;
         } catch (e) {
             console.error(e);

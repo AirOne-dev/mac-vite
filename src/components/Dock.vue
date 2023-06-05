@@ -23,7 +23,7 @@
 
     const scales = reactive(dock.icons.map(() => 1));
     const margins = reactive(dock.icons.map(() => 7));
-    const transitions = reactive(dock.icons.map(() => 'all ease .15s'));
+    const transitions = reactive(dock.icons.map(() => 'all ease .05s'));
 
     const handleMouseEnter = () => {
         setTimeout(() => {
@@ -49,13 +49,13 @@
 
     const handleMouseLeave = () => {
         scales.forEach((_, index) => {
-            transitions[index] = 'all linear .2s';
+            transitions[index] = 'all linear .1s';
             scales[index] = 1;
             margins[index] = 7;
         });
         setTimeout(() => {
             scales.forEach((_, index) => {
-                transitions[index] = 'all linear .1s';
+                transitions[index] = 'all linear .05s';
             });
         }, 200);
     };
