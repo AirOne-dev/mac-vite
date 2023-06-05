@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 1212",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --base '/mac-vite/'",
     "preview": "vite preview",
     "publish": "vue-tsc && vite build && cd dist && git init && git branch -m build && git add -A && git commit -m 'build' && git push https://github.com/AirOne-dev/mac-vite.git build:build --force"
   },
