@@ -10,16 +10,17 @@
     "publish": "rm -rf dist && npm run build && echo \"[Live demo](https://airone-dev.github.io/mac-vite/)\" > dist/README.md && cd dist && git init && git branch -m build && git add -A && git commit -m 'build' && git push https://github.com/AirOne-dev/mac-vite.git build:build --force"
   },
   "dependencies": {
+    "vite-plugin-mkcert": "^1.15.0",
     "vite-plugin-static-copy": "^0.16.0",
-    "vue": "^3.2.47",
-    "vue-router": "^4.2.1"
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.2.3",
-    "@vitejs/plugin-vue": "^4.1.0",
-    "sass": "^1.62.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.2",
-    "vue-tsc": "^1.4.2"
+    "@types/node": "^20.3.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.63.4",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.8.0"
   }
 }
