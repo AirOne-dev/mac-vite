@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
     import { Icons } from '@/enums';
-    import { defineProps, PropType } from 'vue';
+    import { type PropType } from 'vue';
 
     defineProps({
         icon: { type: String as PropType<Icons>, required: true },
